@@ -1,0 +1,240 @@
+
+{
+  "id": "fundamentos-programacion",
+  "name": "Fundamentos de programación",
+  "category": "Programación",
+  "description": "Aprende a pensar como programador, resolver problemas y construir las bases necesarias para desarrollar software.",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "id": "introduccion",
+      "title": "1. Introducción a la programación",
+      "submodules": [
+        {
+          "id": "conceptos-basicos",
+          "title": "Conceptos básicos",
+          "units": [
+            {
+              "id": "que-es-programar",
+              "title": "¿Qué significa programar?",
+              "points": [
+                {
+                  "id": "que-es-programacion",
+                  "title": "Comprender qué es la programación",
+                  "description": "Entender qué significa darle instrucciones a una computadora."
+                },
+                {
+                  "id": "que-es-software",
+                  "title": "Diferenciar software y hardware",
+                  "description": "Identificar la diferencia entre los componentes físicos y los programas."
+                },
+                {
+                  "id": "lenguajes-programacion",
+                  "title": "Conocer los lenguajes de programación",
+                  "description": "Comprender para qué sirven y por qué existen diferentes lenguajes."
+                },
+                {
+                  "id": "compilados-interpretados",
+                  "title": "Diferenciar lenguajes compilados e interpretados",
+                  "description": "Conocer las formas generales en que un programa puede ejecutarse."
+                }
+              ]
+            },
+            {
+              "id": "funcionamiento-programas",
+              "title": "Cómo funcionan los programas",
+              "points": [
+                {
+                  "id": "instrucciones",
+                  "title": "Comprender las instrucciones",
+                  "description": "Reconocer que un programa está compuesto por instrucciones ordenadas."
+                },
+                {
+                  "id": "entrada-proceso-salida",
+                  "title": "Entender entrada, proceso y salida",
+                  "description": "Identificar cómo un programa recibe datos, los procesa y produce resultados."
+                },
+                {
+                  "id": "algoritmos",
+                  "title": "Comprender qué es un algoritmo",
+                  "description": "Entender cómo describir una solución mediante pasos ordenados."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logica",
+      "title": "2. Lógica y resolución de problemas",
+      "submodules": [
+        {
+          "id": "pensamiento-computacional",
+          "title": "Pensamiento computacional",
+          "units": [
+            {
+              "id": "descomposicion",
+              "title": "Descomposición de problemas",
+              "points": [
+                {
+                  "id": "dividir-problemas",
+                  "title": "Dividir problemas grandes en pequeños",
+                  "description": "Aprender a separar un problema complejo en partes manejables."
+                },
+                {
+                  "id": "identificar-problema",
+                  "title": "Identificar entradas y resultados esperados",
+                  "description": "Determinar qué información necesitamos y qué debemos obtener."
+                },
+                {
+                  "id": "reconocer-patrones",
+                  "title": "Reconocer patrones",
+                  "description": "Encontrar similitudes y comportamientos repetidos en los problemas."
+                }
+              ]
+            },
+            {
+              "id": "algoritmos-pseudocodigo",
+              "title": "Algoritmos y pseudocódigo",
+              "points": [
+                {
+                  "id": "crear-algoritmos",
+                  "title": "Diseñar algoritmos paso a paso",
+                  "description": "Construir soluciones ordenadas antes de escribir código."
+                },
+                {
+                  "id": "escribir-pseudocodigo",
+                  "title": "Escribir pseudocódigo",
+                  "description": "Representar algoritmos utilizando un lenguaje sencillo y estructurado."
+                },
+                {
+                  "id": "diagramas-flujo",
+                  "title": "Interpretar diagramas de flujo",
+                  "description": "Representar visualmente las decisiones y pasos de un algoritmo."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bases-logicas",
+      "title": "3. Estructuras fundamentales",
+      "submodules": [
+        {
+          "id": "datos-variables",
+          "title": "Datos y variables",
+          "units": [
+            {
+              "id": "tipos-datos",
+              "title": "Tipos de datos",
+              "points": [
+                {
+                  "id": "numeros",
+                  "title": "Comprender los datos numéricos",
+                  "description": "Diferenciar números enteros y decimales."
+                },
+                {
+                  "id": "cadenas",
+                  "title": "Trabajar con cadenas de texto",
+                  "description": "Comprender cómo se representa y utiliza el texto."
+                },
+                {
+                  "id": "booleanos",
+                  "title": "Comprender los valores booleanos",
+                  "description": "Utilizar los valores verdadero y falso."
+                },
+                {
+                  "id": "variables",
+                  "title": "Crear y utilizar variables",
+                  "description": "Guardar y modificar información durante la ejecución de un programa."
+                },
+                {
+                  "id": "constantes",
+                  "title": "Comprender las constantes",
+                  "description": "Conocer los valores que no deberían cambiar durante la ejecución."
+                }
+              ]
+            },
+            {
+              "id": "operadores",
+              "title": "Operadores",
+              "points": [
+                {
+                  "id": "aritmeticos",
+                  "title": "Utilizar operadores aritméticos",
+                  "description": "Realizar operaciones matemáticas mediante código."
+                },
+                {
+                  "id": "comparacion",
+                  "title": "Utilizar operadores de comparación",
+                  "description": "Comparar valores y obtener resultados booleanos."
+                },
+                {
+                  "id": "logicos",
+                  "title": "Utilizar operadores lógicos",
+                  "description": "Combinar condiciones utilizando AND, OR y NOT."
+                },
+                {
+                  "id": "precedencia",
+                  "title": "Comprender la precedencia de operadores",
+                  "description": "Identificar el orden en que se evalúan las operaciones."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "control-flujo",
+          "title": "Control del flujo",
+          "units": [
+            {
+              "id": "condicionales",
+              "title": "Condicionales",
+              "points": [
+                {
+                  "id": "if-else",
+                  "title": "Utilizar if y else",
+                  "description": "Ejecutar instrucciones dependiendo de una condición."
+                },
+                {
+                  "id": "condiciones-multiples",
+                  "title": "Manejar múltiples condiciones",
+                  "description": "Resolver situaciones con varias alternativas."
+                },
+                {
+                  "id": "condicionales-anidadas",
+                  "title": "Comprender condicionales anidadas",
+                  "description": "Combinar decisiones dentro de otras decisiones."
+                }
+              ]
+            },
+            {
+              "id": "bucles",
+              "title": "Ciclos y repeticiones",
+              "points": [
+                {
+                  "id": "while",
+                  "title": "Utilizar ciclos while",
+                  "description": "Repetir instrucciones mientras una condición sea verdadera."
+                },
+                {
+                  "id": "for",
+                  "title": "Utilizar ciclos for",
+                  "description": "Recorrer secuencias y repetir instrucciones de manera controlada."
+                },
+                {
+                  "id": "control-bucles",
+                  "title": "Controlar ciclos",
+                  "description": "Comprender break, continue y las condiciones de finalización."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
