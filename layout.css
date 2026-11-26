@@ -1,0 +1,369 @@
+
+/* ========================================
+   FORGE - APPLICATION LAYOUT
+======================================== */
+
+.app-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+/* ========================================
+   SIDEBAR
+======================================== */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+
+    width: var(--sidebar-width);
+    height: 100vh;
+
+    padding: 26px 18px 18px;
+
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--border);
+
+    transition: transform var(--transition-normal);
+}
+
+
+/* BRAND */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 8px;
+    margin-bottom: 48px;
+}
+
+.brand-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    background: var(--accent);
+    color: var(--text-inverse);
+
+    border-radius: 10px;
+
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.brand-info h1 {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.brand-info span {
+    display: block;
+
+    margin-top: 1px;
+
+    color: var(--text-muted);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* SIDEBAR SECTIONS */
+
+.sidebar-section {
+    margin-bottom: 34px;
+}
+
+.section-label {
+    display: block;
+
+    padding: 0 12px;
+    margin-bottom: 12px;
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    min-height: 43px;
+
+    padding: 0 12px;
+
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+
+    color: var(--text-secondary);
+
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+
+    transition:
+        background var(--transition-fast),
+        color var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.nav-item:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.nav-item.active {
+    background: var(--accent-soft);
+    border-color: rgba(163, 230, 53, 0.12);
+    color: var(--accent);
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+
+    font-size: 19px;
+    line-height: 1;
+}
+
+
+/* SIDEBAR BOTTOM */
+
+.sidebar-bottom {
+    margin-top: auto;
+    padding-top: 18px;
+
+    border-top: 1px solid var(--border);
+}
+
+.sidebar-version {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 0 10px;
+
+    color: var(--text-muted);
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    background: var(--accent);
+    border-radius: 50%;
+
+    box-shadow: 0 0 8px rgba(163, 230, 53, 0.4);
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100% - var(--sidebar-width));
+    min-height: 100vh;
+
+    margin-left: var(--sidebar-width);
+}
+
+
+/* ========================================
+   TOPBAR
+======================================== */
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: var(--topbar-height);
+
+    padding: 0 36px;
+
+    background: rgba(16, 17, 20, 0.92);
+    border-bottom: 1px solid var(--border);
+
+    backdrop-filter: blur(16px);
+}
+
+.breadcrumb {
+    color: var(--text-muted);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+
+    color: var(--text-secondary);
+    font-size: 19px;
+
+    transition: all var(--transition-fast);
+}
+
+.icon-button:hover {
+    background: var(--bg-hover);
+    border-color: var(--border);
+    color: var(--text-primary);
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    background: #303c2a;
+    border: 1px solid rgba(163, 230, 53, 0.2);
+    border-radius: 50%;
+
+    color: var(--accent);
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   PAGE CONTENT
+======================================== */
+
+.page-content {
+    flex: 1;
+
+    width: 100%;
+    max-width: 1500px;
+
+    padding: 40px 42px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.app-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 42px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--text-muted);
+
+    font-size: 10px;
+    letter-spacing: 0.3px;
+}
+
+
+/* ========================================
+   MOBILE MENU BUTTON
+======================================== */
+
+.menu-toggle {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+
+    color: var(--text-primary);
+    font-size: 17px;
+}
+
+.menu-toggle:hover {
+    background: var(--bg-hover);
+}
+
+
+/* ========================================
+   SIDEBAR OVERLAY
+======================================== */
+
+.sidebar-overlay {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+}
+
+.sidebar-overlay.active {
+    display: block;
+}
+
