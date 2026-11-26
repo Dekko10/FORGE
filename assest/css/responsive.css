@@ -1,0 +1,191 @@
+
+/* ========================================
+   FORGE - RESPONSIVE DESIGN
+======================================== */
+
+
+/* ========================================
+   LARGE SCREENS
+======================================== */
+
+@media (min-width: 1600px) {
+
+    .page-content {
+        padding: 48px 56px;
+    }
+
+    .module-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   TABLETS AND SMALL DESKTOPS
+======================================== */
+
+@media (max-width: 1100px) {
+
+    :root {
+        --sidebar-width: 220px;
+    }
+
+    .page-content {
+        padding: 32px 26px;
+    }
+
+    .topbar {
+        padding: 0 26px;
+    }
+
+    .module-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .main-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .topbar {
+        justify-content: flex-start;
+        gap: 15px;
+
+        height: 60px;
+        padding: 0 20px;
+    }
+
+    .breadcrumb {
+        flex: 1;
+    }
+
+    .topbar-actions {
+        gap: 10px;
+    }
+
+    .page-content {
+        padding: 28px 22px;
+    }
+
+    .app-footer {
+        padding: 16px 22px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 540px) {
+
+    .page-content {
+        padding: 24px 16px;
+    }
+
+    .topbar {
+        padding: 0 16px;
+    }
+
+    .module-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 15px;
+    }
+
+    .stat-value {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 17px;
+    }
+
+    .module-card {
+        padding: 17px;
+    }
+
+    .app-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+
+        padding: 15px 16px;
+    }
+
+    .breadcrumb {
+        font-size: 10px;
+    }
+
+    .user-avatar {
+        width: 31px;
+        height: 31px;
+    }
+
+    .icon-button {
+        width: 31px;
+        height: 31px;
+    }
+
+}
+
+
+/* ========================================
+   VERY SMALL SCREENS
+======================================== */
+
+@media (max-width: 360px) {
+
+    .page-content {
+        padding: 20px 12px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        gap: 9px;
+        padding: 0 12px;
+    }
+
+    .topbar-actions {
+        gap: 5px;
+    }
+
+}
